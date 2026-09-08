@@ -1,0 +1,32 @@
+================================================================================
+OIL INDIA LIMITED (PROTOTYPE DEMO ENVIRONMENT - SYNTHETIC DATA)
+FINAL WELL COMPLETION REPORT (WCR) - SECTION 6: WELL CONTROL & HAZARDS
+================================================================================
+Well Name: Nahorkatiya-88
+Field: Nahorkatiya Field
+Formation: Kopili Formation
+Depth Interval: 4120.0 m - 4155.0 m
+
+INCIDENT REPORT & OBSERVATIONS:
+--------------------------------------------------------------------------------
+Event Type: KICK (Gas Influx / Overpressure)
+Severity: CRITICAL
+Depth: 4135.0 m
+
+Cause:
+Drilled rapidly into an unanticipated abnormal overpressured fractured gas sand streak within the upper Kopili Formation. Drilling break observed (ROP jumped from 6.5 m/hr to 18.0 m/hr). Formation pore pressure gradient was 1.44 SG equivalent vs active mud density of 1.34 SG, inducing instantaneous gas influx.
+
+Impact:
+Active pit volume surged by 22 bbls in 6 minutes. Gas units on mud logging unit spiked from 45 units to 1850 units. Shut-In Drillpipe Pressure (SIDPP) reached 360 psi; Shut-In Casing Pressure (SICP) reached 480 psi.
+
+Mitigation Actions Taken:
+1. Driller executed soft shut-in procedure: spaced out tool joint, shut down mud pumps, opened HCR choke line, closed annular blowout preventer (BOP).
+2. Monitored and recorded stabilized SIDPP (360 psi) and SICP (480 psi).
+3. Prepared kill sheet and mixed 1.48 SG weighted polymer kill mud.
+4. Successfully circulated out gas kick using Wait & Weight (Engineer's) Method via automated choke console while maintaining constant bottom hole pressure.
+5. Replaced complete hole volume with 1.48 SG kill mud; flow check confirmed well statically dead.
+
+Lessons Learned & Recommendations:
+- Perform flow check immediately upon noticing any ROP drilling break > 4 m/hr in Kopili and lower Barail formations.
+- Ensure degasser, choke manifold transducers, and gas alarms are tested and certified prior to entering Kopili top.
+================================================================================

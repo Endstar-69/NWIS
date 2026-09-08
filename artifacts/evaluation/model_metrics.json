@@ -1,0 +1,140 @@
+{
+  "mud_loss": {
+    "model_name": "Mud Loss Risk Benchmark Model",
+    "target_event": "MUD_LOSS",
+    "classification": "[D] Optional Advanced Enterprise Integration / Benchmark",
+    "evaluation_methodology": "5-Fold GroupKFold Cross-Validation by well_id (Zero Target Leakage)",
+    "accuracy": 0.985,
+    "precision": 0.2699,
+    "recall": 0.5372,
+    "f1_score": 0.3278,
+    "roc_auc": 0.9248,
+    "confusion_matrix": [
+      [
+        8597,
+        92
+      ],
+      [
+        39,
+        34
+      ]
+    ],
+    "feature_importances": {
+      "pressure_delta": 0.1539,
+      "flow_rate": 0.148,
+      "flow_delta": 0.1077,
+      "historical_event_density": 0.0784,
+      "rop": 0.0722,
+      "wob": 0.067,
+      "mse": 0.0527,
+      "torque_delta": 0.0459,
+      "torque": 0.0437,
+      "inclination": 0.0433,
+      "rop_delta": 0.0395,
+      "hook_load": 0.0385,
+      "depth": 0.0363,
+      "ecd": 0.0239,
+      "standpipe_pressure": 0.0181,
+      "azimuth": 0.0146,
+      "rpm": 0.0066,
+      "mud_weight": 0.006,
+      "formation_risk_score": 0.0021,
+      "overbalance_sg": 0.0015
+    },
+    "training_sample_count": 8762,
+    "trained_at": "2026-09-08T17:28:59.195574+00:00",
+    "disclaimer": "Supervised ML benchmark model trained with GroupKFold cross-validation on synthetic reference wells. Not used as sole authority over deterministic engineering physics."
+  },
+  "stuck_pipe": {
+    "model_name": "Stuck Pipe Risk Benchmark Model",
+    "target_event": "STUCK_PIPE",
+    "classification": "[D] Optional Advanced Enterprise Integration / Benchmark",
+    "evaluation_methodology": "5-Fold GroupKFold Cross-Validation by well_id (Zero Target Leakage)",
+    "accuracy": 0.9831,
+    "precision": 0.2978,
+    "recall": 0.6225,
+    "f1_score": 0.3979,
+    "roc_auc": 0.889,
+    "confusion_matrix": [
+      [
+        8566,
+        117
+      ],
+      [
+        29,
+        50
+      ]
+    ],
+    "feature_importances": {
+      "torque_delta": 0.1698,
+      "mse": 0.1409,
+      "rop": 0.1398,
+      "pressure_delta": 0.1368,
+      "rop_delta": 0.1202,
+      "torque": 0.0439,
+      "hook_load": 0.0438,
+      "standpipe_pressure": 0.0416,
+      "wob": 0.0362,
+      "inclination": 0.0346,
+      "depth": 0.0246,
+      "flow_rate": 0.021,
+      "rpm": 0.0141,
+      "azimuth": 0.0105,
+      "historical_event_density": 0.0082,
+      "flow_delta": 0.0073,
+      "ecd": 0.0036,
+      "overbalance_sg": 0.0017,
+      "formation_risk_score": 0.0008,
+      "mud_weight": 0.0003
+    },
+    "training_sample_count": 8762,
+    "trained_at": "2026-09-08T17:29:01.243250+00:00",
+    "disclaimer": "Supervised ML benchmark model trained with GroupKFold cross-validation on synthetic reference wells. Not used as sole authority over deterministic engineering physics."
+  },
+  "kick": {
+    "model_name": "Kick Influx Risk Benchmark Model",
+    "target_event": "KICK",
+    "classification": "[D] Optional Advanced Enterprise Integration / Benchmark",
+    "evaluation_methodology": "5-Fold GroupKFold Cross-Validation by well_id (Zero Target Leakage)",
+    "accuracy": 0.9787,
+    "precision": 0.2096,
+    "recall": 0.5667,
+    "f1_score": 0.2914,
+    "roc_auc": 0.9355,
+    "confusion_matrix": [
+      [
+        8535,
+        157
+      ],
+      [
+        31,
+        39
+      ]
+    ],
+    "feature_importances": {
+      "rop_delta": 0.1579,
+      "flow_delta": 0.1447,
+      "pressure_delta": 0.129,
+      "depth": 0.0682,
+      "rop": 0.0636,
+      "hook_load": 0.063,
+      "historical_event_density": 0.0532,
+      "inclination": 0.0519,
+      "torque": 0.0414,
+      "flow_rate": 0.0394,
+      "mse": 0.0336,
+      "standpipe_pressure": 0.033,
+      "azimuth": 0.0244,
+      "torque_delta": 0.0242,
+      "wob": 0.0184,
+      "ecd": 0.0175,
+      "mud_weight": 0.0127,
+      "overbalance_sg": 0.01,
+      "rpm": 0.0086,
+      "formation_risk_score": 0.0053
+    },
+    "training_sample_count": 8762,
+    "trained_at": "2026-09-08T17:29:03.272443+00:00",
+    "disclaimer": "Supervised ML benchmark model trained with GroupKFold cross-validation on synthetic reference wells. Not used as sole authority over deterministic engineering physics."
+  }
+}

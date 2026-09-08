@@ -1,0 +1,11 @@
+formation_id,formation_name,lithology,age_era,typical_top_depth,typical_bottom_depth,pore_pressure_gradient_sg,fracture_gradient_sg,known_hazards,drillability_rating,risk_level,color_hex
+FMT-001,Alluvium,"Unconsolidated Sand, Silt, Gravel",Recent to Pleistocene,0.0,350.0,1.0,1.45,"Surface washouts, high permeability seepage",Easy,LOW,#94A3B8
+FMT-002,Dhekiajuli Sandstone,"Coarse Sandstone, Pebble Beds",Pliocene,350.0,1100.0,1.02,1.52,"Minor seepage loss, bit balling in clayey stringers",Easy,LOW,#64748B
+FMT-003,Girujan Clay,"Mottled Plastic Clay, Reactive Shale",Miocene,1100.0,1950.0,1.05,1.6,"Swelling shale, tight hole during trips, hole enlargement",Medium,MEDIUM,#D97706
+FMT-004,Tipam Sandstone,Medium to Coarse Friable Sandstone,Miocene,1950.0,2750.0,1.08,1.68,"Partial mud loss, differential sticking, high filtration",Easy to Medium,MEDIUM,#3B82F6
+FMT-005,Bokabil Formation,"Interbedded Sandstone, Siltstone, Silt-Shale",Miocene,2750.0,3150.0,1.15,1.72,"Transition pressure ramp-up, pack-off risks, minor gas kicks",Medium,HIGH,#8B5CF6
+FMT-006,Barail Sandstone,"Fine to Medium Quartzose Sandstone, Coal Streaks",Oligocene,3150.0,3700.0,1.28,1.82,"High pressure gas zones, severe differential sticking, mud loss in depleted streaks",Medium,HIGH,#10B981
+FMT-007,Barail Coal-Shale,"Carbonaceous Splintery Shale, Sub-bituminous Coal",Oligocene,3700.0,3950.0,1.34,1.88,"Severe hole collapse, torque spikes, pack-off, stuck pipe",Hard,CRITICAL,#EF4444
+FMT-008,Kopili Formation,"Splintery Black Shale, Calcareous Siltstone",Eocene,3950.0,4350.0,1.42,1.95,"Abnormal overpressure gas kick, sloughing shale",Hard,HIGH,#EC4899
+FMT-009,Sylhet Limestone,Hard Fossiliferous Vuggy Limestone,Eocene,4350.0,4700.0,1.1,1.7,"Total lost circulation (cavernous/vuggy), H2S traces, slow ROP",Very Hard,CRITICAL,#F97316
+FMT-010,Disang Formation,Tectonic Splintery Dark Slate & Hard Quartzite,Paleocene to Cretaceous,4700.0,5200.0,1.38,1.98,"Severe vibration, twist-off risk, high temperature",Abrasive / Extreme,HIGH,#6366F1

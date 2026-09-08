@@ -1,0 +1,121 @@
+id,well_id,casing_type,slurry_type,slurry_density_ppg,top_of_cement_depth,volume_bbls,pressure_psi,remarks,is_demo_data
+1,WELL-001,Conductor,QuickSet Pozzolan,14.2,0.0,347.0,2536.0,Bumped plug with 500 psi overbalance. Floats held.,True
+2,WELL-001,Surface,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,357.0,2283.0,Bumped plug with 500 psi overbalance. Floats held.,True
+3,WELL-001,Intermediate,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,195.0,3167.0,Bumped plug with 500 psi overbalance. Floats held.,True
+4,WELL-001,Production Liner,Class G + 0.2% Antifoam + Silica Flour,15.8,2800.0,210.0,2753.0,Bumped plug with 500 psi overbalance. Floats held.,True
+5,WELL-002,Conductor,QuickSet Pozzolan,14.2,0.0,258.0,2127.0,Bumped plug with 500 psi overbalance. Floats held.,True
+6,WELL-002,Surface,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,283.0,2829.0,Bumped plug with 500 psi overbalance. Floats held.,True
+7,WELL-002,Intermediate,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,416.0,2436.0,Bumped plug with 500 psi overbalance. Floats held.,True
+8,WELL-002,Production Liner,Class G + 0.2% Antifoam + Silica Flour,15.8,2800.0,356.0,2040.0,Bumped plug with 500 psi overbalance. Floats held.,True
+9,WELL-003,Conductor,QuickSet Pozzolan,14.2,0.0,343.0,2404.0,Bumped plug with 500 psi overbalance. Floats held.,True
+10,WELL-003,Surface,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,274.0,3058.0,Bumped plug with 500 psi overbalance. Floats held.,True
+11,WELL-003,Intermediate,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,236.0,2248.0,Bumped plug with 500 psi overbalance. Floats held.,True
+12,WELL-003,Production Liner,Class G + 0.2% Antifoam + Silica Flour,15.8,2800.0,214.0,2779.0,Bumped plug with 500 psi overbalance. Floats held.,True
+13,WELL-004,Conductor,QuickSet Pozzolan,14.2,0.0,219.0,2731.0,Bumped plug with 500 psi overbalance. Floats held.,True
+14,WELL-004,Surface,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,371.0,3040.0,Bumped plug with 500 psi overbalance. Floats held.,True
+15,WELL-004,Intermediate,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,275.0,2651.0,Bumped plug with 500 psi overbalance. Floats held.,True
+16,WELL-004,Production Liner,Class G + 0.2% Antifoam + Silica Flour,15.8,2800.0,359.0,2924.0,Bumped plug with 500 psi overbalance. Floats held.,True
+17,WELL-005,Conductor,QuickSet Pozzolan,14.2,0.0,413.0,2764.0,Bumped plug with 500 psi overbalance. Floats held.,True
+18,WELL-005,Surface,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,373.0,2900.0,Bumped plug with 500 psi overbalance. Floats held.,True
+19,WELL-005,Intermediate,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,385.0,3160.0,Bumped plug with 500 psi overbalance. Floats held.,True
+20,WELL-005,Production Liner,Class G + 0.2% Antifoam + Silica Flour,15.8,2800.0,391.0,2247.0,Bumped plug with 500 psi overbalance. Floats held.,True
+21,WELL-006,Conductor,QuickSet Pozzolan,14.2,0.0,375.0,2306.0,Bumped plug with 500 psi overbalance. Floats held.,True
+22,WELL-006,Surface,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,354.0,3020.0,Bumped plug with 500 psi overbalance. Floats held.,True
+23,WELL-006,Intermediate,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,403.0,1967.0,Bumped plug with 500 psi overbalance. Floats held.,True
+24,WELL-006,Production Liner,Class G + 0.2% Antifoam + Silica Flour,15.8,2800.0,314.0,2714.0,Bumped plug with 500 psi overbalance. Floats held.,True
+25,WELL-007,Conductor,QuickSet Pozzolan,14.2,0.0,315.0,2540.0,Bumped plug with 500 psi overbalance. Floats held.,True
+26,WELL-007,Surface,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,199.0,2955.0,Bumped plug with 500 psi overbalance. Floats held.,True
+27,WELL-007,Intermediate,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,208.0,1926.0,Bumped plug with 500 psi overbalance. Floats held.,True
+28,WELL-007,Production Liner,Class G + 0.2% Antifoam + Silica Flour,15.8,2800.0,392.0,2921.0,Bumped plug with 500 psi overbalance. Floats held.,True
+29,WELL-008,Conductor,QuickSet Pozzolan,14.2,0.0,411.0,2835.0,Bumped plug with 500 psi overbalance. Floats held.,True
+30,WELL-008,Surface,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,231.0,2972.0,Bumped plug with 500 psi overbalance. Floats held.,True
+31,WELL-008,Intermediate,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,317.0,2106.0,Bumped plug with 500 psi overbalance. Floats held.,True
+32,WELL-008,Production Liner,Class G + 0.2% Antifoam + Silica Flour,15.8,2800.0,222.0,2471.0,Bumped plug with 500 psi overbalance. Floats held.,True
+33,WELL-009,Conductor,QuickSet Pozzolan,14.2,0.0,398.0,2865.0,Bumped plug with 500 psi overbalance. Floats held.,True
+34,WELL-009,Surface,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,293.0,2038.0,Bumped plug with 500 psi overbalance. Floats held.,True
+35,WELL-009,Intermediate,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,354.0,2220.0,Bumped plug with 500 psi overbalance. Floats held.,True
+36,WELL-009,Production Liner,Class G + 0.2% Antifoam + Silica Flour,15.8,2800.0,363.0,2994.0,Bumped plug with 500 psi overbalance. Floats held.,True
+37,WELL-010,Conductor,QuickSet Pozzolan,14.2,0.0,305.0,1986.0,Bumped plug with 500 psi overbalance. Floats held.,True
+38,WELL-010,Surface,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,410.0,2845.0,Bumped plug with 500 psi overbalance. Floats held.,True
+39,WELL-010,Intermediate,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,294.0,1913.0,Bumped plug with 500 psi overbalance. Floats held.,True
+40,WELL-010,Production Liner,Class G + 0.2% Antifoam + Silica Flour,15.8,2800.0,296.0,2070.0,Bumped plug with 500 psi overbalance. Floats held.,True
+41,WELL-011,Conductor,QuickSet Pozzolan,14.2,0.0,311.0,2650.0,Bumped plug with 500 psi overbalance. Floats held.,True
+42,WELL-011,Surface,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,296.0,2954.0,Bumped plug with 500 psi overbalance. Floats held.,True
+43,WELL-011,Intermediate,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,194.0,2944.0,Bumped plug with 500 psi overbalance. Floats held.,True
+44,WELL-011,Production Liner,Class G + 0.2% Antifoam + Silica Flour,15.8,2800.0,298.0,3177.0,Bumped plug with 500 psi overbalance. Floats held.,True
+45,WELL-012,Conductor,QuickSet Pozzolan,14.2,0.0,386.0,2431.0,Bumped plug with 500 psi overbalance. Floats held.,True
+46,WELL-012,Surface,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,365.0,1844.0,Bumped plug with 500 psi overbalance. Floats held.,True
+47,WELL-012,Intermediate,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,281.0,2321.0,Bumped plug with 500 psi overbalance. Floats held.,True
+48,WELL-012,Production Liner,Class G + 0.2% Antifoam + Silica Flour,15.8,2800.0,389.0,1806.0,Bumped plug with 500 psi overbalance. Floats held.,True
+49,WELL-013,Conductor,QuickSet Pozzolan,14.2,0.0,370.0,2246.0,Bumped plug with 500 psi overbalance. Floats held.,True
+50,WELL-013,Surface,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,328.0,1949.0,Bumped plug with 500 psi overbalance. Floats held.,True
+51,WELL-013,Intermediate,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,191.0,2667.0,Bumped plug with 500 psi overbalance. Floats held.,True
+52,WELL-013,Production Liner,Class G + 0.2% Antifoam + Silica Flour,15.8,2800.0,268.0,1930.0,Bumped plug with 500 psi overbalance. Floats held.,True
+53,WELL-014,Conductor,QuickSet Pozzolan,14.2,0.0,318.0,1923.0,Bumped plug with 500 psi overbalance. Floats held.,True
+54,WELL-014,Surface,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,419.0,1941.0,Bumped plug with 500 psi overbalance. Floats held.,True
+55,WELL-014,Intermediate,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,419.0,2766.0,Bumped plug with 500 psi overbalance. Floats held.,True
+56,WELL-014,Production Liner,Class G + 0.2% Antifoam + Silica Flour,15.8,2800.0,188.0,2387.0,Bumped plug with 500 psi overbalance. Floats held.,True
+57,WELL-015,Conductor,QuickSet Pozzolan,14.2,0.0,284.0,2168.0,Bumped plug with 500 psi overbalance. Floats held.,True
+58,WELL-015,Surface,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,376.0,2077.0,Bumped plug with 500 psi overbalance. Floats held.,True
+59,WELL-015,Intermediate,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,376.0,3113.0,Bumped plug with 500 psi overbalance. Floats held.,True
+60,WELL-015,Production Liner,Class G + 0.2% Antifoam + Silica Flour,15.8,2800.0,366.0,3122.0,Bumped plug with 500 psi overbalance. Floats held.,True
+61,WELL-016,Conductor,QuickSet Pozzolan,14.2,0.0,287.0,2566.0,Bumped plug with 500 psi overbalance. Floats held.,True
+62,WELL-016,Surface,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,408.0,2583.0,Bumped plug with 500 psi overbalance. Floats held.,True
+63,WELL-016,Intermediate,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,294.0,2573.0,Bumped plug with 500 psi overbalance. Floats held.,True
+64,WELL-016,Production Liner,Class G + 0.2% Antifoam + Silica Flour,15.8,2800.0,276.0,1964.0,Bumped plug with 500 psi overbalance. Floats held.,True
+65,WELL-017,Conductor,QuickSet Pozzolan,14.2,0.0,354.0,3155.0,Bumped plug with 500 psi overbalance. Floats held.,True
+66,WELL-017,Surface,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,403.0,2904.0,Bumped plug with 500 psi overbalance. Floats held.,True
+67,WELL-017,Intermediate,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,214.0,3138.0,Bumped plug with 500 psi overbalance. Floats held.,True
+68,WELL-017,Production Liner,Class G + 0.2% Antifoam + Silica Flour,15.8,2800.0,400.0,2512.0,Bumped plug with 500 psi overbalance. Floats held.,True
+69,WELL-018,Conductor,QuickSet Pozzolan,14.2,0.0,210.0,2165.0,Bumped plug with 500 psi overbalance. Floats held.,True
+70,WELL-018,Surface,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,317.0,2604.0,Bumped plug with 500 psi overbalance. Floats held.,True
+71,WELL-018,Intermediate,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,315.0,2060.0,Bumped plug with 500 psi overbalance. Floats held.,True
+72,WELL-018,Production Liner,Class G + 0.2% Antifoam + Silica Flour,15.8,2800.0,366.0,2256.0,Bumped plug with 500 psi overbalance. Floats held.,True
+73,WELL-019,Conductor,QuickSet Pozzolan,14.2,0.0,393.0,1807.0,Bumped plug with 500 psi overbalance. Floats held.,True
+74,WELL-019,Surface,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,373.0,1846.0,Bumped plug with 500 psi overbalance. Floats held.,True
+75,WELL-019,Intermediate,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,256.0,2748.0,Bumped plug with 500 psi overbalance. Floats held.,True
+76,WELL-019,Production Liner,Class G + 0.2% Antifoam + Silica Flour,15.8,2800.0,352.0,2915.0,Bumped plug with 500 psi overbalance. Floats held.,True
+77,WELL-020,Conductor,QuickSet Pozzolan,14.2,0.0,288.0,2889.0,Bumped plug with 500 psi overbalance. Floats held.,True
+78,WELL-020,Surface,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,277.0,2270.0,Bumped plug with 500 psi overbalance. Floats held.,True
+79,WELL-020,Intermediate,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,243.0,2743.0,Bumped plug with 500 psi overbalance. Floats held.,True
+80,WELL-020,Production Liner,Class G + 0.2% Antifoam + Silica Flour,15.8,2800.0,268.0,2117.0,Bumped plug with 500 psi overbalance. Floats held.,True
+81,WELL-021,Conductor,QuickSet Pozzolan,14.2,0.0,250.0,2186.0,Bumped plug with 500 psi overbalance. Floats held.,True
+82,WELL-021,Surface,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,419.0,2031.0,Bumped plug with 500 psi overbalance. Floats held.,True
+83,WELL-021,Intermediate,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,188.0,3152.0,Bumped plug with 500 psi overbalance. Floats held.,True
+84,WELL-021,Production Liner,Class G + 0.2% Antifoam + Silica Flour,15.8,2800.0,287.0,3059.0,Bumped plug with 500 psi overbalance. Floats held.,True
+85,WELL-022,Conductor,QuickSet Pozzolan,14.2,0.0,376.0,1832.0,Bumped plug with 500 psi overbalance. Floats held.,True
+86,WELL-022,Surface,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,241.0,2222.0,Bumped plug with 500 psi overbalance. Floats held.,True
+87,WELL-022,Intermediate,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,197.0,2006.0,Bumped plug with 500 psi overbalance. Floats held.,True
+88,WELL-022,Production Liner,Class G + 0.2% Antifoam + Silica Flour,15.8,2800.0,332.0,1868.0,Bumped plug with 500 psi overbalance. Floats held.,True
+89,WELL-023,Conductor,QuickSet Pozzolan,14.2,0.0,294.0,3024.0,Bumped plug with 500 psi overbalance. Floats held.,True
+90,WELL-023,Surface,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,352.0,1899.0,Bumped plug with 500 psi overbalance. Floats held.,True
+91,WELL-023,Intermediate,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,242.0,1890.0,Bumped plug with 500 psi overbalance. Floats held.,True
+92,WELL-023,Production Liner,Class G + 0.2% Antifoam + Silica Flour,15.8,2800.0,282.0,2698.0,Bumped plug with 500 psi overbalance. Floats held.,True
+93,WELL-024,Conductor,QuickSet Pozzolan,14.2,0.0,239.0,2905.0,Bumped plug with 500 psi overbalance. Floats held.,True
+94,WELL-024,Surface,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,235.0,1915.0,Bumped plug with 500 psi overbalance. Floats held.,True
+95,WELL-024,Intermediate,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,215.0,2831.0,Bumped plug with 500 psi overbalance. Floats held.,True
+96,WELL-024,Production Liner,Class G + 0.2% Antifoam + Silica Flour,15.8,2800.0,254.0,2279.0,Bumped plug with 500 psi overbalance. Floats held.,True
+97,WELL-025,Conductor,QuickSet Pozzolan,14.2,0.0,388.0,2979.0,Bumped plug with 500 psi overbalance. Floats held.,True
+98,WELL-025,Surface,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,261.0,2982.0,Bumped plug with 500 psi overbalance. Floats held.,True
+99,WELL-025,Intermediate,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,333.0,3177.0,Bumped plug with 500 psi overbalance. Floats held.,True
+100,WELL-025,Production Liner,Class G + 0.2% Antifoam + Silica Flour,15.8,2800.0,389.0,2456.0,Bumped plug with 500 psi overbalance. Floats held.,True
+101,WELL-026,Conductor,QuickSet Pozzolan,14.2,0.0,240.0,2418.0,Bumped plug with 500 psi overbalance. Floats held.,True
+102,WELL-026,Surface,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,404.0,2093.0,Bumped plug with 500 psi overbalance. Floats held.,True
+103,WELL-026,Intermediate,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,349.0,2867.0,Bumped plug with 500 psi overbalance. Floats held.,True
+104,WELL-026,Production Liner,Class G + 0.2% Antifoam + Silica Flour,15.8,2800.0,236.0,2646.0,Bumped plug with 500 psi overbalance. Floats held.,True
+105,WELL-027,Conductor,QuickSet Pozzolan,14.2,0.0,256.0,2363.0,Bumped plug with 500 psi overbalance. Floats held.,True
+106,WELL-027,Surface,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,195.0,2940.0,Bumped plug with 500 psi overbalance. Floats held.,True
+107,WELL-027,Intermediate,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,331.0,2158.0,Bumped plug with 500 psi overbalance. Floats held.,True
+108,WELL-027,Production Liner,Class G + 0.2% Antifoam + Silica Flour,15.8,2800.0,340.0,3190.0,Bumped plug with 500 psi overbalance. Floats held.,True
+109,WELL-028,Conductor,QuickSet Pozzolan,14.2,0.0,289.0,2938.0,Bumped plug with 500 psi overbalance. Floats held.,True
+110,WELL-028,Surface,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,306.0,1896.0,Bumped plug with 500 psi overbalance. Floats held.,True
+111,WELL-028,Intermediate,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,268.0,3117.0,Bumped plug with 500 psi overbalance. Floats held.,True
+112,WELL-028,Production Liner,Class G + 0.2% Antifoam + Silica Flour,15.8,2800.0,351.0,2580.0,Bumped plug with 500 psi overbalance. Floats held.,True
+113,WELL-029,Conductor,QuickSet Pozzolan,14.2,0.0,381.0,2874.0,Bumped plug with 500 psi overbalance. Floats held.,True
+114,WELL-029,Surface,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,261.0,2652.0,Bumped plug with 500 psi overbalance. Floats held.,True
+115,WELL-029,Intermediate,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,284.0,2105.0,Bumped plug with 500 psi overbalance. Floats held.,True
+116,WELL-029,Production Liner,Class G + 0.2% Antifoam + Silica Flour,15.8,2800.0,256.0,2570.0,Bumped plug with 500 psi overbalance. Floats held.,True
+117,WELL-030,Conductor,QuickSet Pozzolan,14.2,0.0,227.0,2901.0,Bumped plug with 500 psi overbalance. Floats held.,True
+118,WELL-030,Surface,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,301.0,2293.0,Bumped plug with 500 psi overbalance. Floats held.,True
+119,WELL-030,Intermediate,Class G + 0.2% Antifoam + Silica Flour,15.8,0.0,397.0,2261.0,Bumped plug with 500 psi overbalance. Floats held.,True
+120,WELL-030,Production Liner,Class G + 0.2% Antifoam + Silica Flour,15.8,2800.0,256.0,2095.0,Bumped plug with 500 psi overbalance. Floats held.,True

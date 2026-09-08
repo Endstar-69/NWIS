@@ -1,0 +1,36 @@
+================================================================================
+OIL INDIA LIMITED (PROTOTYPE DEMO ENVIRONMENT - SYNTHETIC DATA)
+DAILY DRILLING REPORT (DDR) #42
+================================================================================
+Well Name: Dikom-104A
+Field: Dikom Field
+Block: Dibrugarh ML
+Date: 2026-02-14
+Current Depth: 3420.0 m
+Target Depth: 4300.0 m
+Formation: Barail Sandstone
+Hole Size: 8.5 inch
+
+INCIDENT REPORT & OBSERVATIONS:
+--------------------------------------------------------------------------------
+Event Type: MUD_LOSS (Lost Circulation)
+Severity: HIGH
+Depth Interval: 3418.0 m - 3432.0 m
+
+Cause:
+Encountered highly permeable, partially depleted sandstone reservoir stringer in Barail Sandstone. Hydrostatic pressure of 1.30 SG mud column exceeded depleted reservoir pore pressure (1.12 SG equivalent), causing micro-fracturing and matrix seepage.
+
+Impact:
+Active pit volume decreased rapidly by 52 bbls over 25 minutes. Standpipe pressure dropped from 2450 psi to 2280 psi (-170 psi drop). Return flow paddle indicator dropped to 65%.
+
+Mitigation Actions Taken:
+1. Immediately picked up drillstring off bottom and stopped rotary.
+2. Reduced main mud pump flow rate from 2100 LPM to 1750 LPM.
+3. Mixed and spotted 40 bbl high-fluid-loss LCM pill containing 25 ppb medium Calcium Carbonate (CaCO3) and 15 ppb coarse walnut shells.
+4. Squeezed 15 bbl into matrix under 180 psi hesitation pressure. Allowed pill to soak for 2 hours.
+5. Reconditioned active mud system density down to 1.25 SG. Full circulation successfully restored with zero pit loss.
+
+Lessons Learned & Recommendations:
+- Pre-treat active polymer mud system with 15-20 ppb fine CaCO3 bridging agent prior to drilling within 30m of Barail Sandstone upper horizon.
+- Continuously monitor delta flow paddle trends during drilling connections in offset wells.
+================================================================================

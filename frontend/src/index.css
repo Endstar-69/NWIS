@@ -1,0 +1,287 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+@layer base {
+  body {
+    @apply bg-[#080C14] text-slate-200 antialiased;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+}
+
+/* Custom Industrial UI Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0F17;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+.light ::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+
+.light ::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+}
+
+.light ::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Leaflet Custom Styling in Dark Mode */
+.leaflet-container {
+  background: #080C14 !important;
+  font-family: inherit !important;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #121824 !important;
+  color: #F1F5F9 !important;
+  border: 1px solid #1E293B !important;
+  border-radius: 8px !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5) !important;
+}
+
+.leaflet-popup-tip {
+  background: #121824 !important;
+  border: 1px solid #1E293B !important;
+}
+
+/* Watermark-Free High-Contrast Dark Map Tile Filter */
+.dark-map-tiles .leaflet-tile {
+  filter: brightness(0.55) invert(1) contrast(2.8) hue-rotate(190deg) saturate(0.25) brightness(0.75);
+}
+
+/* ==========================================================================
+   LIGHT MODE INDUSTRIAL THEME OVERRIDES
+   ========================================================================== */
+.light {
+  color-scheme: light;
+}
+
+.light body,
+.light main {
+  background-color: #F8FAFC !important;
+  color: #0F172A !important;
+}
+
+.light nav {
+  background-color: #FFFFFF !important;
+  color: #0F172A !important;
+  border-bottom-color: #E2E8F0 !important;
+}
+
+.light aside {
+  background-color: #FFFFFF !important;
+  border-right-color: #E2E8F0 !important;
+}
+
+/* Prototype Demo Banner in Light Mode */
+.light .bg-amber-950\/80,
+.light .bg-amber-950 {
+  background-color: #FEF3C7 !important;
+  color: #92400E !important;
+  border-color: #FCD34D !important;
+}
+
+.light .bg-amber-900\/60 {
+  background-color: #FDE68A !important;
+  color: #78350F !important;
+  border-color: #F59E0B !important;
+}
+
+/* Primary Dark Containers -> Pure Crisp Light Cards */
+.light .bg-\[\#0B111E\],
+.light .bg-\[\#0B111E\]\/95,
+.light .bg-\[\#0B111E\]\/90,
+.light .bg-\[\#0B111E\]\/80,
+.light .bg-\[\#080C14\],
+.light .bg-\[\#06090E\],
+.light .bg-\[\#0F172A\],
+.light .bg-\[\#0F172A\]\/95,
+.light .bg-\[\#0F172A\]\/90,
+.light .bg-\[\#0F172A\]\/80,
+.light .bg-\[\#0E1524\],
+.light .bg-slate-950 {
+  background-color: #FFFFFF !important;
+  color: #0F172A !important;
+  border-color: #E2E8F0 !important;
+}
+
+/* Secondary Panels, Pills, Inputs, Controls */
+.light .bg-slate-900,
+.light .bg-slate-900\/95,
+.light .bg-slate-900\/90,
+.light .bg-slate-900\/80,
+.light .bg-slate-900\/70,
+.light .bg-slate-900\/60,
+.light .bg-slate-900\/50,
+.light .bg-slate-900\/40,
+.light .bg-slate-850 {
+  background-color: #F8FAFC !important;
+  color: #0F172A !important;
+  border-color: #E2E8F0 !important;
+}
+
+/* Gradient Container Light Overrides */
+.light .bg-gradient-to-b.from-\[\#0B1424\].to-\[\#0B111E\],
+.light .from-\[\#0B1424\],
+.light .to-\[\#0B111E\] {
+  background-image: none !important;
+  background-color: #FFFFFF !important;
+}
+
+/* All Slate-800 variations (badges, controls, selected cards, progress bars) */
+.light .bg-slate-800,
+.light .bg-slate-800\/95,
+.light .bg-slate-800\/90,
+.light .bg-slate-800\/80,
+.light .bg-slate-800\/70,
+.light .bg-slate-800\/60,
+.light .bg-slate-800\/50,
+.light .bg-slate-800\/40 {
+  background-color: #F1F5F9 !important;
+  color: #334155 !important;
+  border-color: #CBD5E1 !important;
+}
+
+/* Selected Well Card in Nearby Wells Map List */
+.light .bg-slate-800\/90.border-sky-500 {
+  background-color: #F0F9FF !important;
+  color: #0369A1 !important;
+  border-color: #0284C7 !important;
+}
+
+/* Accent Cards & Tints (sky-950, emerald-950, rose-950) */
+.light .bg-sky-950,
+.light .bg-sky-950\/60,
+.light .bg-sky-950\/50,
+.light .bg-sky-950\/40,
+.light .bg-sky-950\/30,
+.light .bg-sky-950\/20 {
+  background-color: #F0F9FF !important;
+  color: #0369A1 !important;
+  border-color: #BAE6FD !important;
+}
+
+.light .bg-emerald-950,
+.light .bg-emerald-950\/60,
+.light .bg-emerald-950\/50,
+.light .bg-emerald-950\/40,
+.light .bg-emerald-950\/30,
+.light .bg-emerald-950\/20 {
+  background-color: #ECFDF5 !important;
+  color: #047857 !important;
+  border-color: #A7F3D0 !important;
+}
+
+.light .bg-rose-950,
+.light .bg-rose-950\/60,
+.light .bg-rose-950\/50,
+.light .bg-rose-950\/40,
+.light .bg-rose-950\/30,
+.light .bg-rose-950\/20 {
+  background-color: #FFF1F2 !important;
+  color: #BE123C !important;
+  border-color: #FECDD3 !important;
+}
+
+/* Text Overrides */
+.light .text-white,
+.light .text-slate-100,
+.light .text-slate-200 {
+  color: #0F172A !important;
+}
+
+.light .text-slate-300,
+.light .text-slate-400 {
+  color: #334155 !important;
+}
+
+.light .text-slate-500 {
+  color: #64748B !important;
+}
+
+.light .text-slate-600 {
+  color: #94A3B8 !important;
+}
+
+/* Border Overrides */
+.light .border-slate-900,
+.light .border-slate-800,
+.light .border-slate-800\/80,
+.light .border-slate-800\/60,
+.light .border-slate-700,
+.light .border-slate-700\/80,
+.light .border-slate-700\/70,
+.light .border-slate-700\/60 {
+  border-color: #E2E8F0 !important;
+}
+
+/* Hover States in Light Mode */
+.light .hover\:bg-slate-800:hover,
+.light .hover\:bg-slate-700:hover {
+  background-color: #E2E8F0 !important;
+  color: #0F172A !important;
+}
+
+.light .hover\:bg-slate-900\/80:hover,
+.light .hover\:bg-slate-900\/50:hover,
+.light .hover\:bg-slate-900\/40:hover {
+  background-color: #F1F5F9 !important;
+  color: #0F172A !important;
+}
+
+/* Form Controls & Shortcuts */
+.light input,
+.light select,
+.light textarea,
+.light kbd {
+  background-color: #FFFFFF !important;
+  color: #0F172A !important;
+  border-color: #CBD5E1 !important;
+}
+
+/* Map Containers & Controls in Light Mode */
+.light .leaflet-container {
+  background: #F1F5F9 !important;
+}
+
+.light .leaflet-popup-content-wrapper {
+  background: #FFFFFF !important;
+  color: #0F172A !important;
+  border: 1px solid #CBD5E1 !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1) !important;
+}
+
+.light .leaflet-popup-tip {
+  background: #FFFFFF !important;
+  border: 1px solid #CBD5E1 !important;
+}
+
+.light .dark-map-tiles .leaflet-tile {
+  filter: none !important;
+}

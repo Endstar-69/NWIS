@@ -1,0 +1,121 @@
+id,well_id,casing_type,hole_size,casing_size,top_depth,shoe_depth,weight_ppf,grade,is_demo_data
+1,WELL-001,Conductor,26.0,20.0,0.0,80.0,94.0,K-55,True
+2,WELL-001,Surface,17.5,13.375,0.0,1100.0,68.0,N-80,True
+3,WELL-001,Intermediate,12.25,9.625,0.0,2950.0,47.0,P-110,True
+4,WELL-001,Production Liner,8.5,7.0,2800.0,4300.0,29.0,Q-125,True
+5,WELL-002,Conductor,26.0,20.0,0.0,80.0,94.0,K-55,True
+6,WELL-002,Surface,17.5,13.375,0.0,1100.0,68.0,N-80,True
+7,WELL-002,Intermediate,12.25,9.625,0.0,2950.0,47.0,P-110,True
+8,WELL-002,Production Liner,8.5,7.0,2800.0,4100.0,29.0,Q-125,True
+9,WELL-003,Conductor,26.0,20.0,0.0,80.0,94.0,K-55,True
+10,WELL-003,Surface,17.5,13.375,0.0,1100.0,68.0,N-80,True
+11,WELL-003,Intermediate,12.25,9.625,0.0,2950.0,47.0,P-110,True
+12,WELL-003,Production Liner,8.5,7.0,2800.0,4650.0,29.0,Q-125,True
+13,WELL-004,Conductor,26.0,20.0,0.0,80.0,94.0,K-55,True
+14,WELL-004,Surface,17.5,13.375,0.0,1100.0,68.0,N-80,True
+15,WELL-004,Intermediate,12.25,9.625,0.0,2950.0,47.0,P-110,True
+16,WELL-004,Production Liner,8.5,7.0,2800.0,4250.0,29.0,Q-125,True
+17,WELL-005,Conductor,26.0,20.0,0.0,80.0,94.0,K-55,True
+18,WELL-005,Surface,17.5,13.375,0.0,1100.0,68.0,N-80,True
+19,WELL-005,Intermediate,12.25,9.625,0.0,2950.0,47.0,P-110,True
+20,WELL-005,Production Liner,8.5,7.0,2800.0,4450.0,29.0,Q-125,True
+21,WELL-006,Conductor,26.0,20.0,0.0,80.0,94.0,K-55,True
+22,WELL-006,Surface,17.5,13.375,0.0,1100.0,68.0,N-80,True
+23,WELL-006,Intermediate,12.25,9.625,0.0,2950.0,47.0,P-110,True
+24,WELL-006,Production Liner,8.5,7.0,2800.0,3850.0,29.0,Q-125,True
+25,WELL-007,Conductor,26.0,20.0,0.0,80.0,94.0,K-55,True
+26,WELL-007,Surface,17.5,13.375,0.0,1100.0,68.0,N-80,True
+27,WELL-007,Intermediate,12.25,9.625,0.0,2950.0,47.0,P-110,True
+28,WELL-007,Production Liner,8.5,7.0,2800.0,4250.0,29.0,Q-125,True
+29,WELL-008,Conductor,26.0,20.0,0.0,80.0,94.0,K-55,True
+30,WELL-008,Surface,17.5,13.375,0.0,1100.0,68.0,N-80,True
+31,WELL-008,Intermediate,12.25,9.625,0.0,2950.0,47.0,P-110,True
+32,WELL-008,Production Liner,8.5,7.0,2800.0,4650.0,29.0,Q-125,True
+33,WELL-009,Conductor,26.0,20.0,0.0,80.0,94.0,K-55,True
+34,WELL-009,Surface,17.5,13.375,0.0,1100.0,68.0,N-80,True
+35,WELL-009,Intermediate,12.25,9.625,0.0,2950.0,47.0,P-110,True
+36,WELL-009,Production Liner,8.5,7.0,2800.0,4650.0,29.0,Q-125,True
+37,WELL-010,Conductor,26.0,20.0,0.0,80.0,94.0,K-55,True
+38,WELL-010,Surface,17.5,13.375,0.0,1100.0,68.0,N-80,True
+39,WELL-010,Intermediate,12.25,9.625,0.0,2950.0,47.0,P-110,True
+40,WELL-010,Production Liner,8.5,7.0,2800.0,4250.0,29.0,Q-125,True
+41,WELL-011,Conductor,26.0,20.0,0.0,80.0,94.0,K-55,True
+42,WELL-011,Surface,17.5,13.375,0.0,1100.0,68.0,N-80,True
+43,WELL-011,Intermediate,12.25,9.625,0.0,2950.0,47.0,P-110,True
+44,WELL-011,Production Liner,8.5,7.0,2800.0,4100.0,29.0,Q-125,True
+45,WELL-012,Conductor,26.0,20.0,0.0,80.0,94.0,K-55,True
+46,WELL-012,Surface,17.5,13.375,0.0,1100.0,68.0,N-80,True
+47,WELL-012,Intermediate,12.25,9.625,0.0,2950.0,47.0,P-110,True
+48,WELL-012,Production Liner,8.5,7.0,2800.0,3850.0,29.0,Q-125,True
+49,WELL-013,Conductor,26.0,20.0,0.0,80.0,94.0,K-55,True
+50,WELL-013,Surface,17.5,13.375,0.0,1100.0,68.0,N-80,True
+51,WELL-013,Intermediate,12.25,9.625,0.0,2950.0,47.0,P-110,True
+52,WELL-013,Production Liner,8.5,7.0,2800.0,4900.0,29.0,Q-125,True
+53,WELL-014,Conductor,26.0,20.0,0.0,80.0,94.0,K-55,True
+54,WELL-014,Surface,17.5,13.375,0.0,1100.0,68.0,N-80,True
+55,WELL-014,Intermediate,12.25,9.625,0.0,2950.0,47.0,P-110,True
+56,WELL-014,Production Liner,8.5,7.0,2800.0,4650.0,29.0,Q-125,True
+57,WELL-015,Conductor,26.0,20.0,0.0,80.0,94.0,K-55,True
+58,WELL-015,Surface,17.5,13.375,0.0,1100.0,68.0,N-80,True
+59,WELL-015,Intermediate,12.25,9.625,0.0,2950.0,47.0,P-110,True
+60,WELL-015,Production Liner,8.5,7.0,2800.0,3850.0,29.0,Q-125,True
+61,WELL-016,Conductor,26.0,20.0,0.0,80.0,94.0,K-55,True
+62,WELL-016,Surface,17.5,13.375,0.0,1100.0,68.0,N-80,True
+63,WELL-016,Intermediate,12.25,9.625,0.0,2950.0,47.0,P-110,True
+64,WELL-016,Production Liner,8.5,7.0,2800.0,4650.0,29.0,Q-125,True
+65,WELL-017,Conductor,26.0,20.0,0.0,80.0,94.0,K-55,True
+66,WELL-017,Surface,17.5,13.375,0.0,1100.0,68.0,N-80,True
+67,WELL-017,Intermediate,12.25,9.625,0.0,2950.0,47.0,P-110,True
+68,WELL-017,Production Liner,8.5,7.0,2800.0,4100.0,29.0,Q-125,True
+69,WELL-018,Conductor,26.0,20.0,0.0,80.0,94.0,K-55,True
+70,WELL-018,Surface,17.5,13.375,0.0,1100.0,68.0,N-80,True
+71,WELL-018,Intermediate,12.25,9.625,0.0,2950.0,47.0,P-110,True
+72,WELL-018,Production Liner,8.5,7.0,2800.0,4100.0,29.0,Q-125,True
+73,WELL-019,Conductor,26.0,20.0,0.0,80.0,94.0,K-55,True
+74,WELL-019,Surface,17.5,13.375,0.0,1100.0,68.0,N-80,True
+75,WELL-019,Intermediate,12.25,9.625,0.0,2950.0,47.0,P-110,True
+76,WELL-019,Production Liner,8.5,7.0,2800.0,4650.0,29.0,Q-125,True
+77,WELL-020,Conductor,26.0,20.0,0.0,80.0,94.0,K-55,True
+78,WELL-020,Surface,17.5,13.375,0.0,1100.0,68.0,N-80,True
+79,WELL-020,Intermediate,12.25,9.625,0.0,2950.0,47.0,P-110,True
+80,WELL-020,Production Liner,8.5,7.0,2800.0,4450.0,29.0,Q-125,True
+81,WELL-021,Conductor,26.0,20.0,0.0,80.0,94.0,K-55,True
+82,WELL-021,Surface,17.5,13.375,0.0,1100.0,68.0,N-80,True
+83,WELL-021,Intermediate,12.25,9.625,0.0,2950.0,47.0,P-110,True
+84,WELL-021,Production Liner,8.5,7.0,2800.0,4450.0,29.0,Q-125,True
+85,WELL-022,Conductor,26.0,20.0,0.0,80.0,94.0,K-55,True
+86,WELL-022,Surface,17.5,13.375,0.0,1100.0,68.0,N-80,True
+87,WELL-022,Intermediate,12.25,9.625,0.0,2950.0,47.0,P-110,True
+88,WELL-022,Production Liner,8.5,7.0,2800.0,3850.0,29.0,Q-125,True
+89,WELL-023,Conductor,26.0,20.0,0.0,80.0,94.0,K-55,True
+90,WELL-023,Surface,17.5,13.375,0.0,1100.0,68.0,N-80,True
+91,WELL-023,Intermediate,12.25,9.625,0.0,2950.0,47.0,P-110,True
+92,WELL-023,Production Liner,8.5,7.0,2800.0,3850.0,29.0,Q-125,True
+93,WELL-024,Conductor,26.0,20.0,0.0,80.0,94.0,K-55,True
+94,WELL-024,Surface,17.5,13.375,0.0,1100.0,68.0,N-80,True
+95,WELL-024,Intermediate,12.25,9.625,0.0,2950.0,47.0,P-110,True
+96,WELL-024,Production Liner,8.5,7.0,2800.0,3850.0,29.0,Q-125,True
+97,WELL-025,Conductor,26.0,20.0,0.0,80.0,94.0,K-55,True
+98,WELL-025,Surface,17.5,13.375,0.0,1100.0,68.0,N-80,True
+99,WELL-025,Intermediate,12.25,9.625,0.0,2950.0,47.0,P-110,True
+100,WELL-025,Production Liner,8.5,7.0,2800.0,4100.0,29.0,Q-125,True
+101,WELL-026,Conductor,26.0,20.0,0.0,80.0,94.0,K-55,True
+102,WELL-026,Surface,17.5,13.375,0.0,1100.0,68.0,N-80,True
+103,WELL-026,Intermediate,12.25,9.625,0.0,2950.0,47.0,P-110,True
+104,WELL-026,Production Liner,8.5,7.0,2800.0,4450.0,29.0,Q-125,True
+105,WELL-027,Conductor,26.0,20.0,0.0,80.0,94.0,K-55,True
+106,WELL-027,Surface,17.5,13.375,0.0,1100.0,68.0,N-80,True
+107,WELL-027,Intermediate,12.25,9.625,0.0,2950.0,47.0,P-110,True
+108,WELL-027,Production Liner,8.5,7.0,2800.0,4250.0,29.0,Q-125,True
+109,WELL-028,Conductor,26.0,20.0,0.0,80.0,94.0,K-55,True
+110,WELL-028,Surface,17.5,13.375,0.0,1100.0,68.0,N-80,True
+111,WELL-028,Intermediate,12.25,9.625,0.0,2950.0,47.0,P-110,True
+112,WELL-028,Production Liner,8.5,7.0,2800.0,3850.0,29.0,Q-125,True
+113,WELL-029,Conductor,26.0,20.0,0.0,80.0,94.0,K-55,True
+114,WELL-029,Surface,17.5,13.375,0.0,1100.0,68.0,N-80,True
+115,WELL-029,Intermediate,12.25,9.625,0.0,2950.0,47.0,P-110,True
+116,WELL-029,Production Liner,8.5,7.0,2800.0,4650.0,29.0,Q-125,True
+117,WELL-030,Conductor,26.0,20.0,0.0,80.0,94.0,K-55,True
+118,WELL-030,Surface,17.5,13.375,0.0,1100.0,68.0,N-80,True
+119,WELL-030,Intermediate,12.25,9.625,0.0,2950.0,47.0,P-110,True
+120,WELL-030,Production Liner,8.5,7.0,2800.0,4100.0,29.0,Q-125,True

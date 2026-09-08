@@ -1,0 +1,35 @@
+================================================================================
+OIL INDIA LIMITED (PROTOTYPE DEMO ENVIRONMENT - SYNTHETIC DATA)
+DAILY DRILLING REPORT (DDR) #58
+================================================================================
+Well Name: Dikom-14
+Field: Dikom Field
+Date: 2025-08-19
+Current Depth: 3422.0 m
+Formation: Barail Sandstone
+Hole Size: 8.5 inch
+
+INCIDENT REPORT & OBSERVATIONS:
+--------------------------------------------------------------------------------
+Event Type: STUCK_PIPE (Differential Sticking)
+Severity: CRITICAL
+Depth: 3422.0 m
+
+Cause:
+Drillstring was kept stationary on bottom for 6 minutes while taking a MWD directional survey across thick permeable Barail Sand. The hydrostatic mud overbalance (360 psi differential) pushed the bottom hole assembly (BHA) collars firmly against the thick filter cake, resulting in differential sticking.
+
+Impact:
+String became completely stuck off-bottom. Zero pipe rotation or reciprocation possible. Overpull up to 70 tons resulted in zero pipe movement. NPT recorded: 32.5 hours.
+
+Mitigation Actions Taken:
+1. Immediately worked pipe up to maximum safe pull limit (70 tons) without exceeding yield strength.
+2. Mixed and spotted 45 bbl oil-based pipe-freeing lubricant pill across the BHA interval.
+3. Applied 22 kNm left-hand torque to drillstring and energized hydraulic jar downward with 45 tons jarring impact.
+4. Jarred continuously for 4.2 hours; string freed successfully after spotting lubricant.
+5. Reamed and washed hole with high-viscosity sweeps before resuming drilling.
+
+Lessons Learned & Recommendations:
+- Strict operational limit: Never leave drillstring stationary for more than 2 minutes in Barail formation.
+- Maintain continuous string rotation (min 15-20 RPM) or reciprocation whenever pumps are off during surveys.
+- Maintain low API fluid loss (< 4.5 cc/30min) to minimize filter cake thickness across depleted sands.
+================================================================================
