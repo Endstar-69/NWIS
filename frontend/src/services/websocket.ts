@@ -21,9 +21,12 @@ class RealtimeWebSocketService {
       wsUrl = `${clean}/ws/well/${wellId}`;
     } else if (typeof window !== 'undefined' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')) {
       wsUrl = `ws://localhost:8000/ws/well/${wellId}`;
-    } else if (typeof window !== 'undefined') {
-      const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
-      wsUrl = `${protocol}//${window.location.host}/ws/well/${wellId}`;
+    }
+    // On Netlify (static host) without a backend URL, go straight to simulation
+    if (!wsUrl) {
+      console.info('[NWIS WS] No backend URL configured. Starting simulated telemetry feed.');
+      this.startSimulatedFeed();
+      return;
     }
 
     try {
