@@ -141,7 +141,7 @@ class RealtimeWebSocketService {
             }
           },
           nearby_historical_evidence: [
-            { well_id: 'WELL-002', well_name: 'NHRK-098', event_type: 'Mud Loss', depth: 3218.0, formation: 'Barail Sandstone', distance_km: 2.8 }
+            { well_id: 'WELL-003', well_name: 'Nahorkatiya-67', event_type: 'Mud Loss', depth: 3218.0, formation: 'Barail Sandstone', distance_km: 1.28 }
           ],
           model_version: 'RandomForest-XAI-v1.4',
           is_demo_prediction: true

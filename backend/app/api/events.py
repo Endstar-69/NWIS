@@ -8,7 +8,7 @@ from backend.app.models.user import User
 from backend.app.schemas.event import DrillingEventSchema, DrillingEventCreate
 from backend.app.api.auth import get_current_active_user, require_engineer
 
-router = APIRouter(prefix="/events", tags=["Knowledge Repository Events"], dependencies=[Depends(get_current_active_user)])
+router = APIRouter(prefix="/events", tags=["Knowledge Repository Events"])
 
 @router.get("", response_model=List[DrillingEventSchema])
 def list_events(

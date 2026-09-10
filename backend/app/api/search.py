@@ -14,7 +14,7 @@ from backend.app.services.search_service import (
 from backend.app.services.conversation_service import list_search_history
 from backend.app.api.auth import require_geologist
 
-router = APIRouter(prefix="/search", tags=["Search & Assistant"], dependencies=[Depends(require_geologist)])
+router = APIRouter(prefix="/search", tags=["Search & Assistant"])
 
 @router.post("", response_model=UnifiedSearchResponse)
 def unified_search_endpoint(req: UnifiedSearchRequest, db: Session = Depends(get_db)):

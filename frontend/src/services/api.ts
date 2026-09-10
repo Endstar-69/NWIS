@@ -32,136 +32,173 @@ const getAuthHeaders = (extraHeaders: Record<string, string> = {}): HeadersInit 
 const MOCK_WELLS: Well[] = [
   {
     well_id: "WELL-001",
-    well_name: "NHRK-104 (Active)",
-    field: "Nahorkatiya",
-    block: "Block-09",
+    well_name: "Dikom-104A",
+    field: "Dikom",
+    block: "Dibrugarh ML",
     basin: "Assam-Arakan",
     operator: "OIL India Limited",
     well_type: "Development",
-    status: "DRILLING",
-    target_depth: 4100.0,
+    status: "Drilling",
+    target_depth: 4300.0,
     current_depth: 3420.0,
-    latitude: 27.3412,
-    longitude: 95.3124,
-    spud_date: "2024-01-15",
+    latitude: 27.42,
+    longitude: 95.32,
+    spud_date: "2026-01-10",
     is_active_well: true,
     is_demo_data: true,
-    data_source: "eRTMAC Live Feed",
+    data_source: "eRTMAC Live Telemetry Feed",
     events_count: 4
   },
   {
-    well_id: "WELL-002",
-    well_name: "NHRK-098",
+    well_id: "WELL-003",
+    well_name: "Nahorkatiya-67",
     field: "Nahorkatiya",
-    block: "Block-09",
+    block: "Nahorkatiya Block",
     basin: "Assam-Arakan",
     operator: "OIL India Limited",
-    well_type: "Exploration",
-    status: "COMPLETED",
-    target_depth: 3950.0,
-    current_depth: 3950.0,
-    latitude: 27.3589,
-    longitude: 95.3289,
-    spud_date: "2023-08-10",
-    completion_date: "2023-11-04",
+    well_type: "Delineation",
+    status: "Completed",
+    target_depth: 4650.0,
+    current_depth: 4650.0,
+    latitude: 27.41042,
+    longitude: 95.31285,
+    spud_date: "2022-08-15",
+    completion_date: "2024-10-20",
     is_active_well: false,
     is_demo_data: true,
     data_source: "Historical DDR Archive",
     events_count: 6
   },
   {
-    well_id: "WELL-003",
-    well_name: "KHL-045",
-    field: "Khoraghat",
-    block: "Block-12",
+    well_id: "WELL-004",
+    well_name: "Moran-120",
+    field: "Moran",
+    block: "Moran Block",
     basin: "Assam-Arakan",
     operator: "OIL India Limited",
     well_type: "Development",
-    status: "COMPLETED",
-    target_depth: 4200.0,
-    current_depth: 4200.0,
-    latitude: 27.3245,
-    longitude: 95.2954,
-    spud_date: "2023-04-12",
-    completion_date: "2023-07-28",
+    status: "Completed",
+    target_depth: 4250.0,
+    current_depth: 4250.0,
+    latitude: 27.42771,
+    longitude: 95.33142,
+    spud_date: "2024-02-15",
+    completion_date: "2024-11-20",
     is_active_well: false,
     is_demo_data: true,
     data_source: "WCR Archive",
     events_count: 8
   },
   {
-    well_id: "WELL-004",
-    well_name: "DGB-012",
-    field: "Digboi",
-    block: "Block-02",
+    well_id: "WELL-006",
+    well_name: "Nahorkatiya-23",
+    field: "Nahorkatiya",
+    block: "Nahorkatiya Block",
     basin: "Assam-Arakan",
     operator: "OIL India Limited",
     well_type: "Development",
-    status: "COMPLETED",
-    target_depth: 3800.0,
-    current_depth: 3800.0,
-    latitude: 27.3821,
-    longitude: 95.3512,
-    spud_date: "2022-11-05",
-    completion_date: "2023-02-18",
+    status: "Completed",
+    target_depth: 3850.0,
+    current_depth: 3850.0,
+    latitude: 27.42278,
+    longitude: 95.30096,
+    spud_date: "2024-05-15",
+    completion_date: "2025-12-20",
     is_active_well: false,
     is_demo_data: true,
     data_source: "Historical DDR Archive",
     events_count: 5
+  },
+  {
+    well_id: "WELL-002",
+    well_name: "Nahorkatiya-18",
+    field: "Nahorkatiya",
+    block: "Nahorkatiya Block",
+    basin: "Assam-Arakan",
+    operator: "OIL India Limited",
+    well_type: "Development",
+    status: "Completed",
+    target_depth: 4100.0,
+    current_depth: 4100.0,
+    latitude: 27.42066,
+    longitude: 95.3406,
+    spud_date: "2025-07-15",
+    completion_date: "2022-10-20",
+    is_active_well: false,
+    is_demo_data: true,
+    data_source: "Historical DDR Archive",
+    events_count: 7
   }
 ];
 
 const MOCK_NEARBY_WELLS: NearbyWell[] = [
   {
     well: MOCK_WELLS[1],
-    distance_km: 2.8,
-    similarity_score: 0.942,
+    distance_km: 1.28,
+    similarity_score: 79.1,
     similarity_breakdown: {
-      distance_score: 0.95,
-      formation_score: 0.92,
-      depth_score: 0.96,
-      reservoir_score: 0.94,
-      trajectory_score: 0.91,
-      events_score: 0.95,
-      weights_used: { spatial: 0.35, formation: 0.30, depth: 0.20, trajectory: 0.15 }
+      distance_score: 0.85,
+      formation_score: 0.82,
+      depth_score: 0.86,
+      reservoir_score: 0.78,
+      trajectory_score: 0.90,
+      events_score: 0.88,
+      weights_used: { spatial: 0.30, formation: 0.25, depth: 0.20, trajectory: 0.05 }
     },
     risk_level: "HIGH",
     historical_events_count: 6,
-    common_formations: ["Barail Sandstone", "Bokabil Shale", "Tipam Sandstone"]
+    common_formations: ["Barail Sandstone", "Bokabil Formation", "Tipam Sandstone"]
   },
   {
     well: MOCK_WELLS[2],
-    distance_km: 4.1,
-    similarity_score: 0.875,
+    distance_km: 1.42,
+    similarity_score: 80.8,
     similarity_breakdown: {
-      distance_score: 0.88,
+      distance_score: 0.83,
       formation_score: 0.85,
-      depth_score: 0.90,
-      reservoir_score: 0.86,
-      trajectory_score: 0.89,
-      events_score: 0.88,
-      weights_used: { spatial: 0.35, formation: 0.30, depth: 0.20, trajectory: 0.15 }
+      depth_score: 0.89,
+      reservoir_score: 0.82,
+      trajectory_score: 0.92,
+      events_score: 0.85,
+      weights_used: { spatial: 0.30, formation: 0.25, depth: 0.20, trajectory: 0.05 }
     },
-    risk_level: "CRITICAL",
+    risk_level: "HIGH",
     historical_events_count: 8,
-    common_formations: ["Barail Sandstone", "Bokabil Shale"]
+    common_formations: ["Barail Sandstone", "Bokabil Formation"]
   },
   {
     well: MOCK_WELLS[3],
-    distance_km: 6.2,
-    similarity_score: 0.791,
+    distance_km: 1.90,
+    similarity_score: 78.8,
     similarity_breakdown: {
       distance_score: 0.78,
       formation_score: 0.80,
       depth_score: 0.82,
       reservoir_score: 0.75,
-      trajectory_score: 0.81,
-      events_score: 0.79,
-      weights_used: { spatial: 0.35, formation: 0.30, depth: 0.20, trajectory: 0.15 }
+      trajectory_score: 0.85,
+      events_score: 0.80,
+      weights_used: { spatial: 0.30, formation: 0.25, depth: 0.20, trajectory: 0.05 }
     },
     risk_level: "MEDIUM",
     historical_events_count: 5,
-    common_formations: ["Barail Sandstone", "Girujan Clay"]
+    common_formations: ["Barail Sandstone", "Tipam Sandstone"]
+  },
+  {
+    well: MOCK_WELLS[4],
+    distance_km: 2.03,
+    similarity_score: 87.3,
+    similarity_breakdown: {
+      distance_score: 0.88,
+      formation_score: 0.90,
+      depth_score: 0.92,
+      reservoir_score: 0.86,
+      trajectory_score: 0.89,
+      events_score: 0.91,
+      weights_used: { spatial: 0.30, formation: 0.25, depth: 0.20, trajectory: 0.05 }
+    },
+    risk_level: "HIGH",
+    historical_events_count: 7,
+    common_formations: ["Barail Sandstone", "Bokabil Formation", "Tipam Sandstone"]
   }
 ];
 
@@ -241,8 +278,8 @@ const MOCK_FORMATIONS: Formation[] = [
 const MOCK_EVENTS: DrillingEvent[] = [
   {
     event_id: "EVT-1001",
-    well_id: "WELL-002",
-    well_name: "NHRK-098",
+    well_id: "WELL-003",
+    well_name: "Nahorkatiya-67",
     event_type: "Mud Loss",
     start_depth: 3218.0,
     end_depth: 3224.5,
@@ -253,7 +290,7 @@ const MOCK_EVENTS: DrillingEvent[] = [
     mitigation: "Pumped 45 bbl engineered LCM blend (Nut plug 25 ppb + Mica 15 ppb). Reduced flow rate to 450 gpm.",
     lesson_learned: "Maintain ECD strictly below 1.34 SG and prepare 50 bbl LCM pill on standby before penetrating Barail coal seams.",
     npt_hours: 14.5,
-    source_document: "DDR_NHRK098_Day42.pdf",
+    source_document: "DDR_NHRK067_Day42.pdf",
     source_page: 3,
     confidence: 0.96,
     is_demo_data: true,
@@ -261,8 +298,8 @@ const MOCK_EVENTS: DrillingEvent[] = [
   },
   {
     event_id: "EVT-1002",
-    well_id: "WELL-003",
-    well_name: "KHL-045",
+    well_id: "WELL-004",
+    well_name: "Moran-120",
     event_type: "Stuck Pipe",
     start_depth: 3265.0,
     end_depth: 3265.0,
@@ -273,7 +310,7 @@ const MOCK_EVENTS: DrillingEvent[] = [
     mitigation: "Spotted 40 bbl lubricating pipe-lax soak pill. Applied maximum downward jarring (85 klbs) with 12 klb-ft torque.",
     lesson_learned: "Never leave drillstring stationary for > 5 min in Barail formation; maintain continuous rotation at 25 RPM.",
     npt_hours: 36.0,
-    source_document: "WCR_KHL045_Final.pdf",
+    source_document: "WCR_MORAN120_Final.pdf",
     source_page: 18,
     confidence: 0.98,
     is_demo_data: true,
@@ -281,8 +318,8 @@ const MOCK_EVENTS: DrillingEvent[] = [
   },
   {
     event_id: "EVT-1003",
-    well_id: "WELL-004",
-    well_name: "DGB-012",
+    well_id: "WELL-006",
+    well_name: "Nahorkatiya-23",
     event_type: "Gas Kick",
     start_depth: 3340.0,
     end_depth: 3342.0,
@@ -293,7 +330,7 @@ const MOCK_EVENTS: DrillingEvent[] = [
     mitigation: "Shut in well on annular preventer (SIDPP: 320 psi, SICP: 480 psi). Circulated out kick using Wait & Weight method with 1.35 SG kill mud.",
     lesson_learned: "Perform flow checks every 10 m when drilling through 3,300–3,400 m interval in Barail horizon.",
     npt_hours: 22.0,
-    source_document: "DDR_DGB012_Day58.pdf",
+    source_document: "DDR_NHRK023_Day58.pdf",
     source_page: 2,
     confidence: 0.94,
     is_demo_data: true,
@@ -312,7 +349,7 @@ const MOCK_ALERTS: Alert[] = [
     severity: "HIGH",
     probability: 0.78,
     reasons: [
-      "Current depth 3,420 m is within 25 m of historical severe mud loss zone in offset well NHRK-098 (3,218–3,224 m).",
+      "Current depth 3,420 m is within 25 m of historical severe mud loss zone in offset well Nahorkatiya-67 (3,218–3,224 m).",
       "ECD (1.34 SG) exceeds recommended safety threshold for micro-fractured coal intervals."
     ],
     historical_evidence: [MOCK_EVENTS[0]],
@@ -617,7 +654,7 @@ export const api = {
         }
       },
       nearby_historical_evidence: [
-        { well_id: "WELL-002", well_name: "NHRK-098", event_type: "Mud Loss", depth: 3218.0, formation: "Barail Sandstone", distance_km: 2.8 }
+        { well_id: "WELL-003", well_name: "Nahorkatiya-67", event_type: "Mud Loss", depth: 3218.0, formation: "Barail Sandstone", distance_km: 1.28 }
       ],
       model_version: "RandomForest-XAI-v1.4",
       is_demo_prediction: true
@@ -790,8 +827,8 @@ export const api = {
     return [
       {
         event_id: "EVT-1001",
-        well_id: "WELL-002",
-        well_name: "NHRK-098",
+        well_id: "WELL-003",
+        well_name: "Nahorkatiya-67",
         event_type: "Mud Loss",
         depth: 3218.0,
         formation: "Barail Sandstone",
@@ -799,7 +836,7 @@ export const api = {
         cause: "Intersected micro-fractured coal boundary with 1.32 SG mud weight.",
         mitigation: "Pumped 45 bbl LCM pill (Nut plug 25 ppb + Mica 15 ppb).",
         lesson_learned: "Maintain ECD strictly below 1.34 SG before entering Barail coal seams.",
-        source_document: "DDR_NHRK098_Day42.pdf",
+        source_document: "DDR_NHRK067_Day42.pdf",
         source_page: 3,
         similarity_score: 0.94,
         match_highlights: ["Horizon: Barail Sandstone (3218.0 m)", "Event: Mud Loss in micro-fractured coal boundary"]
@@ -819,8 +856,8 @@ export const api = {
     return [
       {
         event_id: "EVT-1001",
-        well_id: "WELL-002",
-        well_name: "NHRK-098",
+        well_id: "WELL-003",
+        well_name: "Nahorkatiya-67",
         event_type: "Mud Loss",
         depth: 3218.0,
         formation: "Barail Sandstone",
@@ -828,7 +865,7 @@ export const api = {
         cause: "Intersected micro-fractured coal boundary with 1.32 SG mud weight.",
         mitigation: "Pumped 45 bbl LCM pill (Nut plug 25 ppb + Mica 15 ppb).",
         lesson_learned: "Maintain ECD strictly below 1.34 SG before entering Barail coal seams.",
-        source_document: "DDR_NHRK098_Day42.pdf",
+        source_document: "DDR_NHRK067_Day42.pdf",
         source_page: 3,
         similarity_score: 0.94,
         match_highlights: ["Horizon: Barail Sandstone (3218.0 m)", "Score: Dense=0.92, Sparse=0.96 (Hybrid=0.94)"]
@@ -847,12 +884,12 @@ export const api = {
     } catch (e) {}
     return {
       question,
-      answer: `### NWIS Decision Support Finding for: "${question}"\n\nBased on correlated offset wells in the **Barail Formation** (*NHRK-098* and *KHL-045*), drilling in this horizon exhibits high vulnerability to **lost circulation** and **differential sticking** between 3,100 m and 3,350 m.\n\n#### Recommended Operational Actions:\n1. **ECD Control**: Maintain ECD below **1.33 SG** (reduce flow rate to ~580 gpm if ECD approaches 1.34 SG).\n2. **LCM Standby**: Stage 50 bbl of coarse/medium nut plug and calcium carbonate pill.\n3. **Connection Protocol**: Keep string rotating at $\\ge 20$ RPM; avoid static periods over 5 minutes.\n\n*Source: Grounded on historical DDR/WCR records from NHRK-098 (Day 42) & KHL-045 (Final Report).*`,
+      answer: `### NWIS Decision Support Finding for: "${question}"\n\nBased on correlated offset wells in the **Barail Formation** (*Nahorkatiya-67* and *Moran-120*), drilling in this horizon exhibits high vulnerability to **lost circulation** and **differential sticking** between 3,100 m and 3,350 m.\n\n#### Recommended Operational Actions:\n1. **ECD Control**: Maintain ECD below **1.33 SG** (reduce flow rate to ~580 gpm if ECD approaches 1.34 SG).\n2. **LCM Standby**: Stage 50 bbl of coarse/medium nut plug and calcium carbonate pill.\n3. **Connection Protocol**: Keep string rotating at $\\ge 20$ RPM; avoid static periods over 5 minutes.\n\n*Source: Grounded on historical DDR/WCR records from Nahorkatiya-67 (Day 42) & Moran-120 (Final Report).*`,
       grounded_evidence: [
         {
           event_id: "EVT-1001",
-          well_id: "WELL-002",
-          well_name: "NHRK-098",
+          well_id: "WELL-003",
+          well_name: "Nahorkatiya-67",
           event_type: "Mud Loss",
           depth: 3218.0,
           formation: "Barail Sandstone",
@@ -860,7 +897,7 @@ export const api = {
           cause: "Intersected micro-fractured coal boundary with 1.32 SG mud weight.",
           mitigation: "Pumped 45 bbl LCM pill.",
           lesson_learned: "Maintain ECD strictly below 1.34 SG.",
-          source_document: "DDR_NHRK098_Day42.pdf",
+          source_document: "DDR_NHRK067_Day42.pdf",
           source_page: 3,
           similarity_score: 0.94,
           match_highlights: ["Barail Sandstone (3218.0 m)"]
@@ -889,21 +926,21 @@ export const api = {
     } catch (e) {}
 
     return {
-      answer: `### NWIS Decision Support Finding for: "${payload.query}"\n\nBased on historical records from offset wells in the **Barail Formation** (*NHRK-098* and *KHL-045*), drilling in this horizon requires active **ECD management** and **differential sticking precautions**.\n\n#### Recommended Mitigations:\n1. **ECD Limit**: Cap ECD below **1.33 SG** to prevent cleat fractures in Barail coals.\n2. **LCM Staging**: Keep 50 bbl engineered LCM pill ready in active tank.\n3. **String Motion**: Maintain minimum 20 RPM pipe rotation during all connections.\n\n*Source: Grounded on offset DDR records from NHRK-098 (Day 42) and KHL-045 (WCR Final).*`,
+      answer: `### NWIS Decision Support Finding for: "${payload.query}"\n\nBased on historical records from offset wells in the **Barail Formation** (*Nahorkatiya-67* and *Moran-120*), drilling in this horizon requires active **ECD management** and **differential sticking precautions**.\n\n#### Recommended Mitigations:\n1. **ECD Limit**: Cap ECD below **1.33 SG** to prevent cleat fractures in Barail coals.\n2. **LCM Staging**: Keep 50 bbl engineered LCM pill ready in active tank.\n3. **String Motion**: Maintain minimum 20 RPM pipe rotation during all connections.\n\n*Source: Grounded on offset DDR records from Nahorkatiya-67 (Day 42) and Moran-120 (WCR Final).*`,
       confidence: 0.95,
       answer_type: "historical_evidence",
       sources: [
         {
-          document: "DDR_NHRK098_Day42.pdf",
-          well: "NHRK-098",
+          document: "DDR_NHRK067_Day42.pdf",
+          well: "Nahorkatiya-67",
           depth: "3,218.0 m",
           formation: "Barail Sandstone",
           event: "Mud Loss",
           relevance: 0.94
         },
         {
-          document: "WCR_KHL045_Final.pdf",
-          well: "KHL-045",
+          document: "WCR_MORAN120_Final.pdf",
+          well: "Moran-120",
           depth: "3,265.0 m",
           formation: "Barail Sandstone",
           event: "Stuck Pipe",
@@ -911,16 +948,16 @@ export const api = {
         }
       ],
       context: {
-        well: "NHRK-104",
+        well: "Dikom-104A",
         depth: payload.depth || 3420.0,
         formation: payload.formation || "Barail Sandstone"
       },
       warnings: [
-        "Historical mud loss at 3,218 m in NHRK-098 required 14.5 hours NPT to resolve."
+        "Historical mud loss at 3,218 m in Nahorkatiya-67 required 14.5 hours NPT to resolve."
       ],
       follow_up_questions: [
-        "What mud weight was used in NHRK-098 through Barail Sandstone?",
-        "How was differential sticking resolved in KHL-045?",
+        "What mud weight was used in Nahorkatiya-67 through Barail Sandstone?",
+        "How was differential sticking resolved in Moran-120?",
         "What are typical fracture gradients in Disang Formation?"
       ],
       conversation_id: payload.conversation_id || `conv-${Date.now()}`,
@@ -938,11 +975,11 @@ export const api = {
       if (res.ok) return await res.json();
     } catch (e) {}
     return [
-      "What mud weight was used in NHRK-098 through Barail Sandstone?",
-      "How was differential sticking resolved in KHL-045?",
+      "What mud weight was used in Nahorkatiya-67 through Barail Sandstone?",
+      "How was differential sticking resolved in Moran-120?",
       "What are typical fracture gradients in Disang Formation?",
       "Recommended LCM formulation for Barail coal cleats",
-      "Historical NPT summary for Block-09 offset wells"
+      "Historical NPT summary for Dibrugarh ML offset wells"
     ];
   },
 
@@ -973,9 +1010,9 @@ export const api = {
       if (res.ok) return await res.json();
     } catch (e) {}
     return [
-      { doc_id: "DOC-001", filename: "demo_well_W001_DDR.pdf", well_name: "NHRK-104", report_type: "DDR", page_count: 6, indexed_chunks: 14, upload_date: "2024-03-01", status: "Indexed" },
-      { doc_id: "DOC-002", filename: "demo_well_W002_DDR.pdf", well_name: "NHRK-098", report_type: "DDR", page_count: 8, indexed_chunks: 18, upload_date: "2024-02-15", status: "Indexed" },
-      { doc_id: "DOC-003", filename: "demo_well_W003_WCR.pdf", well_name: "KHL-045", report_type: "WCR", page_count: 24, indexed_chunks: 42, upload_date: "2024-01-20", status: "Indexed" }
+      { doc_id: "DOC-001", filename: "demo_well_W001_DDR.pdf", well_name: "Dikom-104A", report_type: "DDR", page_count: 6, indexed_chunks: 14, upload_date: "2024-03-01", status: "Indexed" },
+      { doc_id: "DOC-002", filename: "demo_well_W003_DDR.pdf", well_name: "Nahorkatiya-67", report_type: "DDR", page_count: 8, indexed_chunks: 18, upload_date: "2024-02-15", status: "Indexed" },
+      { doc_id: "DOC-003", filename: "demo_well_W004_WCR.pdf", well_name: "Moran-120", report_type: "WCR", page_count: 24, indexed_chunks: 42, upload_date: "2024-01-20", status: "Indexed" }
     ];
   },
 
@@ -1050,9 +1087,9 @@ export const api = {
     } catch (e) {}
     return {
       nodes: [
-        { id: "WELL-001", label: "NHRK-104 (Active)", type: "well", group: "active" },
-        { id: "WELL-002", label: "NHRK-098", type: "well", group: "offset" },
-        { id: "WELL-003", label: "KHL-045", type: "well", group: "offset" },
+        { id: "WELL-001", label: "Dikom-104A (Active)", type: "well", group: "active" },
+        { id: "WELL-003", label: "Nahorkatiya-67", type: "well", group: "offset" },
+        { id: "WELL-004", label: "Moran-120", type: "well", group: "offset" },
         { id: "FMT-BARAIL", label: "Barail Sandstone", type: "formation", group: "geology" },
         { id: "EVT-MUDLOSS", label: "Mud Loss (3218m)", type: "event", group: "hazard" },
         { id: "EVT-STUCKPIPE", label: "Differential Sticking (3265m)", type: "event", group: "hazard" }
@@ -1148,7 +1185,7 @@ export const api = {
     } catch (e) {}
     return {
       report_date: new Date().toISOString().split('T')[0],
-      well_name: "NHRK-104 (Active)",
+      well_name: "Dikom-104A",
       current_depth: 3420.0,
       drilled_interval_24h: "48.5 m",
       avg_rop: "14.2 m/hr",

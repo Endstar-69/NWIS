@@ -6,7 +6,7 @@ from backend.app.models.formation import Formation
 from backend.app.schemas.well import FormationSchema
 from backend.app.api.auth import get_current_active_user
 
-router = APIRouter(prefix="/formations", tags=["Formations"], dependencies=[Depends(get_current_active_user)])
+router = APIRouter(prefix="/formations", tags=["Formations"])
 
 @router.get("", response_model=List[FormationSchema])
 def list_formations(db: Session = Depends(get_db)):

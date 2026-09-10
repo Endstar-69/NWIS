@@ -7,7 +7,7 @@ from backend.app.services.alert_service import get_all_alerts, acknowledge_alert
 from backend.app.models.user import User
 from backend.app.api.auth import get_current_active_user, require_supervisor
 
-router = APIRouter(prefix="/alerts", tags=["Alerts"], dependencies=[Depends(get_current_active_user)])
+router = APIRouter(prefix="/alerts", tags=["Alerts"])
 
 @router.get("", response_model=List[AlertSchema])
 def list_alerts_endpoint(

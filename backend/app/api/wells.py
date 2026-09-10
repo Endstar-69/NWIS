@@ -15,7 +15,7 @@ from backend.app.services.well_service import (
 )
 from backend.app.api.auth import get_current_active_user
 
-router = APIRouter(prefix="/wells", tags=["Wells"], dependencies=[Depends(get_current_active_user)])
+router = APIRouter(prefix="/wells", tags=["Wells"])
 
 @router.get("", response_model=List[WellResponse])
 def list_wells(

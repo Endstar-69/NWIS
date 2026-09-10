@@ -168,10 +168,10 @@ class LLMService:
             "parts": [{"text": f"{SYSTEM_PROMPT}\n\n{grounding_context}"}]
         })
 
-        models_to_try = [self.model, "gemini-3.1-flash-lite", "gemini-3.5-flash", "gemini-flash-latest"]
+        models_to_try = ["gemini-3.6-flash", "gemini-3.8-flash", self.model, "gemini-3.1-flash-lite", "gemini-flash-latest"]
         unique_models = []
         for m in models_to_try:
-            if m not in unique_models:
+            if m and m not in unique_models:
                 unique_models.append(m)
 
         last_err = None
