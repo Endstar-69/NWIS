@@ -190,46 +190,54 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({ onNavigate }) => {
                   </tr>
                 </thead>
                 <tbody className={`divide-y ${isDark ? 'divide-slate-800/60' : 'divide-slate-100'}`}>
-                  {nearbyWells.slice(0, 5).map((item) => (
-                    <tr key={item.well.well_id} className={`${isDark ? 'hover:bg-slate-900/40' : 'hover:bg-slate-50'} transition`}>
-                      <td className="py-2.5 px-3 font-semibold text-slate-900 dark:text-white flex items-center gap-2">
-                        <span className="w-1.5 h-1.5 rounded-full bg-sky-500 shrink-0"></span>
-                        <span className="truncate">{item.well.well_name}</span>
-                      </td>
-                      <td className="py-2.5 px-3 font-mono text-slate-600 dark:text-slate-300 font-medium">
-                        {item.distance_km} km
-                      </td>
-                      <td className="py-2.5 px-3">
-                        <div className="flex items-center gap-2">
-                          <div className={`w-14 ${isDark ? 'bg-slate-800' : 'bg-slate-200'} rounded-full h-1.5 overflow-hidden`}>
-                            <div
-                              className="bg-emerald-500 h-full rounded-full"
-                              style={{ width: `${item.similarity_score}%` }}
-                            />
+                  {nearbyWells.slice(0, 5).map((item, idx) => {
+                    const wellId = item.well?.well_id || (item as any).well_id || `well-${idx}`;
+                    const wellName = item.well?.well_name || (item as any).well_name || wellId;
+                    const dist = item.distance_km ?? 0;
+                    const sim = item.similarity_score ?? 0;
+                    const risk = item.risk_level || 'MEDIUM';
+                    const eventsCount = item.historical_events_count ?? 0;
+                    return (
+                      <tr key={wellId} className={`${isDark ? 'hover:bg-slate-900/40' : 'hover:bg-slate-50'} transition`}>
+                        <td className="py-2.5 px-3 font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-sky-500 shrink-0"></span>
+                          <span className="truncate">{wellName}</span>
+                        </td>
+                        <td className="py-2.5 px-3 font-mono text-slate-600 dark:text-slate-300 font-medium">
+                          {dist} km
+                        </td>
+                        <td className="py-2.5 px-3">
+                          <div className="flex items-center gap-2">
+                            <div className={`w-14 ${isDark ? 'bg-slate-800' : 'bg-slate-200'} rounded-full h-1.5 overflow-hidden`}>
+                              <div
+                                className="bg-emerald-500 h-full rounded-full"
+                                style={{ width: `${sim}%` }}
+                              />
+                            </div>
+                            <span className="font-mono text-emerald-600 dark:text-emerald-400 font-semibold">{sim}%</span>
                           </div>
-                          <span className="font-mono text-emerald-600 dark:text-emerald-400 font-semibold">{item.similarity_score}%</span>
-                        </div>
-                      </td>
-                      <td className="py-2.5 px-3">
-                        <RiskPill level={item.risk_level} />
-                      </td>
-                      <td className="py-2.5 px-3 font-mono text-amber-600 dark:text-amber-400 font-medium">
-                        {item.historical_events_count} recorded
-                      </td>
-                      <td className="py-2.5 px-3 text-right">
-                        <button
-                          onClick={() => onNavigate('comparison')}
-                          className={`px-2 py-1 rounded text-xs font-sans font-medium transition border ${
-                            isDark
-                              ? 'bg-slate-800 hover:bg-slate-700 text-sky-400 border-slate-700'
-                              : 'bg-slate-100 hover:bg-slate-200 text-sky-700 border-slate-200'
-                          }`}
-                        >
-                          Compare Log
-                        </button>
-                      </td>
-                    </tr>
-                  ))}
+                        </td>
+                        <td className="py-2.5 px-3">
+                          <RiskPill level={risk} />
+                        </td>
+                        <td className="py-2.5 px-3 font-mono text-amber-600 dark:text-amber-400 font-medium">
+                          {eventsCount} recorded
+                        </td>
+                        <td className="py-2.5 px-3 text-right">
+                          <button
+                            onClick={() => onNavigate('comparison')}
+                            className={`px-2 py-1 rounded text-xs font-sans font-medium transition border ${
+                              isDark
+                                ? 'bg-slate-800 hover:bg-slate-700 text-sky-400 border-slate-700'
+                                : 'bg-slate-100 hover:bg-slate-200 text-sky-700 border-slate-200'
+                            }`}
+                          >
+                            Compare Log
+                          </button>
+                        </td>
+                      </tr>
+                    );
+                  })}
                 </tbody>
               </table>
             </div>

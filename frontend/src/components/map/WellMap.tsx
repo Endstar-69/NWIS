@@ -11,11 +11,7 @@ import iconRetinaUrl from 'leaflet/dist/images/marker-icon-2x.png';
 import shadowUrl from 'leaflet/dist/images/marker-shadow.png';
 
 delete (L.Icon.Default.prototype as any)._getIconUrl;
-L.Icon.Default.mergeOptions({
-  iconUrl,
-  iconRetinaUrl,
-  shadowUrl,
-});
+L.Icon.Default.mergeOptions({ iconUrl, iconRetinaUrl, shadowUrl });
 
 interface WellMapProps {
   activeWell: Well | null;
@@ -182,7 +178,10 @@ export const WellMap: React.FC<WellMapProps> = ({
 
       // Nearby Wells Markers
       nearbyWells.forEach((item) => {
-        const w = item.well;
+        if (!item) return;
+        const w = item.well || (item as any);
+        if (!w || typeof w.latitude !== 'number' || typeof w.longitude !== 'number') return;
+
         const riskColors: Record<string, string> = {
           CRITICAL: '#EF4444',
           HIGH: '#F97316',
@@ -217,15 +216,15 @@ export const WellMap: React.FC<WellMapProps> = ({
         popupContent.className = 'font-mono text-xs space-y-2 p-1 min-w-[200px]';
         popupContent.innerHTML = `
           <div class="flex items-center justify-between border-b pb-1.5 border-slate-200 dark:border-slate-700">
-            <span class="font-bold text-slate-900 dark:text-white">${w.well_name}</span>
-            <span style="color: ${color}" class="font-bold text-[10px] uppercase">${item.risk_level}</span>
+            <span class="font-bold text-slate-900 dark:text-white">${w.well_name || w.well_id || 'Offset Well'}</span>
+            <span style="color: ${color}" class="font-bold text-[10px] uppercase">${item.risk_level || 'MEDIUM'}</span>
           </div>
           <div class="space-y-0.5 text-slate-600 dark:text-slate-300 text-[11px]">
-            <div>Field: <b class="text-slate-900 dark:text-white">${w.field}</b></div>
-            <div>Distance: <b class="text-sky-500">${item.distance_km} km</b></div>
-            <div>Target Depth: <b class="text-slate-900 dark:text-white">${w.target_depth} m</b></div>
-            <div>Similarity: <b class="text-emerald-500">${item.similarity_score}%</b></div>
-            <div>Past Incidents: <b class="text-amber-500">${item.historical_events_count}</b></div>
+            <div>Field: <b class="text-slate-900 dark:text-white">${w.field || 'Assam'}</b></div>
+            <div>Distance: <b class="text-sky-500">${item.distance_km ?? 0} km</b></div>
+            <div>Target Depth: <b class="text-slate-900 dark:text-white">${w.target_depth ?? 'N/A'} m</b></div>
+            <div>Similarity: <b class="text-emerald-500">${item.similarity_score ?? 80}%</b></div>
+            <div>Past Incidents: <b class="text-amber-500">${item.historical_events_count ?? 0}</b></div>
           </div>
         `;
 

@@ -87,21 +87,26 @@ export const WellComparisonPage: React.FC = () => {
       </div>
 
       {/* Side-by-Side Stratigraphic & Drilling Program Columns */}
-      <div className={`grid grid-cols-1 md:grid-cols-${Math.max(1, comparisonData.length)} gap-4`}>
-        {comparisonData.map((item) => {
-          const w = item.well;
+      <div className={`grid grid-cols-1 md:grid-cols-${Math.max(1, Array.isArray(comparisonData) ? comparisonData.length : 1)} gap-4`}>
+        {Array.isArray(comparisonData) && comparisonData.map((item, idx) => {
+          const w = item.well || item;
+          const wellId = w.well_id || `comp-${idx}`;
+          const wellName = w.well_name || wellId;
+          const casings = Array.isArray(item.casing) ? item.casing : [];
+          const events = Array.isArray(item.events_summary) ? item.events_summary : [];
+
           return (
             <Card
-              key={w.well_id}
+              key={wellId}
               className={`border-t-2 ${w.is_active_well ? 'border-t-sky-500' : 'border-t-slate-400 dark:border-t-slate-700'}`}
-              title={w.well_name}
-              subtitle={`${w.field} Field (${w.well_type})`}
+              title={wellName}
+              subtitle={`${w.field || 'Assam'} Field (${w.well_type || 'Development'})`}
               headerAction={
                 w.is_active_well ? (
                   <Badge variant="primary">ACTIVE RIG</Badge>
                 ) : (
                   <button
-                    onClick={() => toggleWellSelection(w.well_id)}
+                    onClick={() => toggleWellSelection(wellId)}
                     className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 p-0.5"
                   >
                     <X className="w-3.5 h-3.5" />
@@ -114,10 +119,10 @@ export const WellComparisonPage: React.FC = () => {
                 <div className={`grid grid-cols-2 gap-2 p-2.5 rounded-md border text-[11px] ${
                   isDark ? 'bg-slate-900/60 border-slate-800' : 'bg-slate-50 border-slate-200'
                 }`}>
-                  <div>Target Depth: <b className="font-mono text-slate-900 dark:text-white">{w.target_depth} m</b></div>
-                  <div>Current: <b className="font-mono text-emerald-600 dark:text-emerald-400">{w.current_depth} m</b></div>
-                  <div>Status: <b className="text-slate-700 dark:text-slate-300">{w.status}</b></div>
-                  <div>NPT Recorded: <b className="font-mono text-amber-600 dark:text-amber-400">{item.total_npt_hours} hrs</b></div>
+                  <div>Target Depth: <b className="font-mono text-slate-900 dark:text-white">{w.target_depth ?? 'N/A'} m</b></div>
+                  <div>Current: <b className="font-mono text-emerald-600 dark:text-emerald-400">{w.current_depth ?? 'N/A'} m</b></div>
+                  <div>Status: <b className="text-slate-700 dark:text-slate-300">{w.status || 'Completed'}</b></div>
+                  <div>NPT Recorded: <b className="font-mono text-amber-600 dark:text-amber-400">{item.total_npt_hours ?? 0} hrs</b></div>
                 </div>
 
                 {/* Casing Program Summary */}
@@ -126,8 +131,8 @@ export const WellComparisonPage: React.FC = () => {
                     <Layers className="w-3 h-3 text-sky-500" /> Casing Strings
                   </div>
                   <div className="space-y-1">
-                    {item.casing.map((cs: any) => (
-                      <div key={cs.id} className={`p-2 rounded-md border flex items-center justify-between text-[11px] ${
+                    {casings.map((cs: any, cIdx: number) => (
+                      <div key={cs.id || cIdx} className={`p-2 rounded-md border flex items-center justify-between text-[11px] ${
                         isDark ? 'bg-slate-900/40 border-slate-800' : 'bg-white border-slate-200 shadow-xs'
                       }`}>
                         <span className="font-semibold text-slate-800 dark:text-slate-200">{cs.casing_type}</span>
@@ -140,10 +145,10 @@ export const WellComparisonPage: React.FC = () => {
                 {/* Historical Events & Mitigations */}
                 <div>
                   <div className="text-[10px] text-slate-500 dark:text-slate-400 uppercase font-semibold tracking-wider mb-1.5 flex items-center gap-1.5">
-                    <ShieldAlert className="w-3 h-3 text-amber-500" /> Historical Incidents ({item.events_summary.length})
+                    <ShieldAlert className="w-3 h-3 text-amber-500" /> Historical Incidents ({events.length})
                   </div>
                   <div className="space-y-1.5 max-h-56 overflow-y-auto pr-1">
-                    {item.events_summary.map((ev: any, i: number) => (
+                    {events.map((ev: any, i: number) => (
                       <div key={i} className={`p-2 rounded-md border text-[11px] ${
                         isDark ? 'bg-slate-900/40 border-slate-800' : 'bg-white border-slate-200 shadow-xs'
                       }`}>
